@@ -1,0 +1,17 @@
+syntax="proto3";
+
+message FullName {
+	string name = 1;
+	string surname = 2;
+	optional string patronymic = 3;
+}
+
+message Student {
+	FullName sty_name = 4;
+	repeated int32 ball = 5;
+	double middle_rat = 6;
+}
+
+message StudentsGroup {
+	repeated Student sty_arr = 7;
+}
